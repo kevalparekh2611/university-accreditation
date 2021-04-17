@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+form {
+  width: 50%;
+  background-color: #877f7f;
+  border-radius: 10px;
+  position: relative;
+}
+input[type="text"],select{
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #c9c1c1;
+}
+
+.rate{
+  float: left;
+  width: 60%;
+}
+
+.button{
+  float: left;
+  width: 40%;
+}
+label{
+  float: left;
+  padding-left: 20px;
+}
+
+input[type="submit"],input[type="reset"]{
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #c9c1c1;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body bgcolor="#c9c1c1">
+
+<center>
+<h2><center>Accrediation</center></h2>
+
+
+<div class="container">
+  <form action="http://localhost:8081/project/accdetails.php" method="post">
+<br><br>
+        <input type="text" id="id" name="uid" placeholder=" User Name">
+
+<br><br>
+
+
+        <input type="text" id="name" name="name" placeholder=" University Name">
+
+<br><br>
+
+      <select name="state">
+        <option value="">Select State</option>
+        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+        <option value="Daman and Diu">Daman and Diu</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Orissa">Orissa</option>
+        <option value="Pondicherry">Pondicherry</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttaranchal">Uttaranchal</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="West Bengal">West Bengal</option>
+        </select>
+
+<br><br>
+<div class="rate">
+
+  <label for="aspects">Curriculum Aspects</label>
+</div>
+<div class="button">
+    <input type="radio"name="a">1 &nbsp
+    <input type="radio"name="a">2 &nbsp
+    <input type="radio"name="a">3 &nbsp
+    <input type="radio"name="a">4 &nbsp
+    <input type="radio"name="a">5 &nbsp
+
+</div>
+<br><br>
+<div class="rate">
+
+  <label for="learning">Teaching & Learning</label>
+</div>
+<div class="button">
+    <input type="radio"name="b">1 &nbsp
+    <input type="radio"name="b">2 &nbsp
+    <input type="radio"name="b">3 &nbsp
+    <input type="radio"name="b">4 &nbsp
+    <input type="radio"name="b">5 &nbsp
+
+</div>
+<br><br>
+<div class="rate">
+
+  <label for="innovations">Research, Innovations and Extensions</label>
+</div>
+<div class="button">
+    <input type="radio"name="c">1 &nbsp
+    <input type="radio"name="c">2 &nbsp
+    <input type="radio"name="c">3 &nbsp
+    <input type="radio"name="c">4 &nbsp
+    <input type="radio"name="c">5 &nbsp
+
+</div>
+<br><br>
+<div class="rate">
+
+  <label for="student">Student support and Progression</label>
+</div>
+<div class="button">
+    <input type="radio"name="d">1 &nbsp
+    <input type="radio"name="d">2 &nbsp
+    <input type="radio"name="d">3 &nbsp
+    <input type="radio"name="d">4 &nbsp
+    <input type="radio"name="d">5 &nbsp
+
+</div>
+<br><br>
+<div class="rate">
+
+  <label for="values">Institutional values & Practices</label>
+</div>
+<div class="button">
+    <input type="radio"name="e">1 &nbsp
+    <input type="radio"name="e">2 &nbsp
+    <input type="radio"name="e">3 &nbsp
+    <input type="radio"name="e">4 &nbsp
+    <input type="radio"name="e">5 &nbsp
+
+</div>
+<br><br>
+<div class="rate">
+
+  <label for="management">Leadership & Management</label>
+</div>
+<div class="button">
+    <input type="radio"name="f">1 &nbsp
+    <input type="radio"name="f">2 &nbsp
+    <input type="radio"name="f">3 &nbsp
+    <input type="radio"name="f">4 &nbsp
+    <input type="radio"name="f">5 &nbsp
+
+
+</div>
+
+<br><br>
+
+      <input type="submit" value="Submit">
+<br><br>
+  </form>
+</div>
+</center>
+</body>
+</html>
